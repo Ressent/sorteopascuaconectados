@@ -1,0 +1,295 @@
+/* Estilo de pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg, #fef9e7 0%, #fff3d6 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.contenedor-principal {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-titulo {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><rect width="100" height="100" fill="%23f3c26b"/><circle cx="30" cy="30" r="8" fill="%23fef9e0"/><circle cx="70" cy="40" r="12" fill="%23fcd34d"/><circle cx="50" cy="70" r="20" fill="%23fbbf24"/><ellipse cx="40" cy="20" rx="6" ry="3" fill="%23fde68a"/></svg>') no-repeat center/cover;
+    background-color: #b45330;
+    background-blend-mode: overlay;
+    border-radius: 48px 48px 24px 24px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 30px -8px rgba(120, 60, 30, 0.4);
+    border: 3px solid #ffd966;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px 0 #7b3f00, 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+.hero-titulo h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hero-titulo p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 0 #6b2e00;
+    margin-top: 0.5rem;
+}
+
+.marca-agua {
+    background: #ffeed9;
+    color: #5e3a1c;
+    display: inline-block;
+    padding: 0.3rem 2rem;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-shadow: none;
+    box-shadow: inset 0 -2px 0 #c59a6b;
+}
+
+.aviso {
+    background: #fff7e0;
+    border-left: 12px solid #cc5500;
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 15px -8px #9c6e4b;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #4b2e16;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.aviso i {
+    font-size: 2.5rem;
+    color: #b94a0c;
+}
+
+.premios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #e9d9b4;
+    padding: 1.8rem 1rem;
+    border-radius: 80px 20px 80px 20px;
+    margin: 2rem 0;
+    border: 2px dashed #b96f2c;
+}
+
+.premio-item {
+    background: white;
+    border-radius: 40px 12px 40px 12px;
+    padding: 0.8rem 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 0 #9e6b3e;
+    color: #3d2b13;
+}
+
+.premio-item i {
+    margin-right: 8px;
+    color: #d97706;
+}
+
+.subtitulo-lista {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #3f280e;
+    margin: 1.5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 5px solid #f0b27a;
+    padding-bottom: 0.5rem;
+}
+
+.vendedores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.8rem 0 2.5rem;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 30px 10px 30px 10px;
+    padding: 1.5rem 1.2rem 1.2rem;
+    box-shadow: 0 12px 0 #7b4d2b, 0 8px 15px rgba(0,0,0,0.2);
+    border: 2px solid #f6c48b;
+    transition: 0.1s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-vendedor {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2e1b0b;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-vendedor i {
+    color: #d4994d;
+    font-size: 1.8rem;
+}
+
+.numeros-disponibles {
+    font-size: 1.15rem;
+    background: #fff3db;
+    padding: 0.7rem;
+    border-radius: 40px;
+    margin: 12px 0;
+    font-weight: 600;
+    border: 1px solid #e1b27c;
+    text-align: center;
+}
+
+.estado {
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    margin: 6px 0 12px;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.disponible-verde {
+    background: #b7e3b1;
+    color: #14532d;
+    border: 2px solid #1f7b3e;
+}
+
+.agotado-rojo {
+    background: #fcc9c9;
+    color: #910e0e;
+    border: 2px solid #b91c1c;
+}
+
+.btn-wsp {
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 1rem 0.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-shadow: 0 7px 0 #1e8c4a, 0 5px 10px black(0,0,0,0.2);
+    border: 1px solid #f3f9e6;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-wsp i {
+    font-size: 1.8rem;
+}
+
+.btn-wsp:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #1e8c4a;
+}
+
+.gracias-cartel {
+    background: #fee69c;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4b2a0c;
+    text-align: center;
+    margin: 2rem auto 1.5rem;
+    display: inline-block;
+    border: 4px solid #f1b656;
+    box-shadow: 0 6px 0 #b4671e;
+    letter-spacing: 0.5px;
+    width: auto;
+}
+
+.footer-contacto {
+    background: #22170b;
+    color: #f7e3c0;
+    padding: 2rem 2rem 1.8rem;
+    border-radius: 40px 40px 20px 20px;
+    margin-top: 3.5rem;
+    text-align: center;
+    border-top: 10px solid #f4b860;
+    font-size: 1.25rem;
+}
+
+.footer-contacto a {
+    background: #25D366;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    border: 2px solid #f5d742;
+    box-shadow: 0 5px 0 #166b41;
+}
+
+.footer-contacto a i {
+    font-size: 1.8rem;
+}
+
+.instagram-link {
+    color: #f5c482;
+    font-weight: 600;
+    text-decoration: underline wavy #e5a74b;
+}
+
+.advertencia-wa {
+    font-size: 1rem;
+    background: #392f24;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-titulo h1 {
+        font-size: 2.2rem;
+    }
+    .hero-titulo p {
+        font-size: 1.3rem;
+    }
+    .subtitulo-lista {
+        font-size: 1.8rem;
+    }
+}
